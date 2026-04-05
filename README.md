@@ -21,9 +21,19 @@ Had to stop SSL
 ```
 
 
+Link to git repo:
+
+```
+git remote add origin git@github.com:mireillehaddad/LLM-PDF.git
+```
+# 2. Questions foe PDF's
+
 Basic factual questions (should be EASY for your model)
-What is the title of the project?
-Which organization is leading the project?
-What is the total funding requested?
-What is the project duration?
-Which region does the project target?
+- What is the title of the project?
+- Which organization is leading the project?
+- What is the total funding requested?
+- What is the project duration?
+- Which region does the project target?
+
+
+
