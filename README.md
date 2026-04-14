@@ -38,7 +38,7 @@ Basic factual questions (should be EASY for mymodel)
 
 
 to deploy into cloud:
-
+```
 & "C:\Users\mirei\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\gcloud" auth login
 
 & "C:\Users\mirei\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\gcloud" config set project llm-pdf-493302
@@ -48,12 +48,13 @@ to deploy into cloud:
   --region northamerica-northeast1 `
   --allow-unauthenticated `
   --set-secrets OPENAI_API_KEY=OPENAI_API_KEY:latest
+```
+
 
   ![
-    
   ](image.png)
 
-
+```
 
   mireille_elhaddadwazen@cloudshell:~/llm-pdf-project (llm-pdf-493302)$ gcloud run deploy pdf-rag-app \
   --source . \
@@ -68,11 +69,13 @@ Building and deploying...
   Setting IAM Policy...done                                                                                                                                                                                
   Creating Revision...done                                                                                                                                                                                 
   Routing traffic...done                                                                                                                                                                                   
-Done.                                                                                                                                                                                                      
+Done.                                                                                                                                                ```
+
+```
 Service [pdf-rag-app] revision [pdf-rag-app-00003-29d] has been deployed and is serving 100 percent of traffic.
 Service URL: https://pdf-rag-app-449206193702.northamerica-northeast1.run.app
 
-
+```
 GCP deployed:
 
 ![alt text](image-1.png)
