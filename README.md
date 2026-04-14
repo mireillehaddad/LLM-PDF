@@ -54,6 +54,20 @@ to deploy into cloud:
   ![
   ](image.png)
 
+
+
+  Service [pdf-rag-app] revision [pdf-rag-app-00003-29d] has been deployed and is serving 100 percent of traffic.
+Service URL: https://pdf-rag-app-449206193702.northamerica-northeast1.run.app
+
+
+
+
+GCP deployed:
+
+
+![GCP deployed](image-1.png)
+
+
 ```
 
   mireille_elhaddadwazen@cloudshell:~/llm-pdf-project (llm-pdf-493302)$ gcloud run deploy pdf-rag-app \
@@ -72,14 +86,5 @@ Building and deploying...
 Done.                                                                                                               ```
 
 
-Service [pdf-rag-app] revision [pdf-rag-app-00003-29d] has been deployed and is serving 100 percent of traffic.
-Service URL: https://pdf-rag-app-449206193702.northamerica-northeast1.run.app
 
-
-
-
-GCP deployed:
-
-```md
-![GCP deployed](image-1.png)
 
