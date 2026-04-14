@@ -80,5 +80,6 @@ Service URL: https://pdf-rag-app-449206193702.northamerica-northeast1.run.app
 
 GCP deployed:
 
-![](image-1.png)
+ ![
+  ](image-1.png)
 
