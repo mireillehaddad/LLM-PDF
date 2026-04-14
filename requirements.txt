@@ -62,3 +62,16 @@ uuid_utils==0.14.1
 xxhash==3.6.0
 yarl==1.23.0
 zstandard==0.25.0
+
+
+fastapi
+uvicorn[standard]
+python-dotenv
+langchain
+langchain-core
+langchain-openai
+langchain-community
+langchain-classic
+langchain-text-splitters
+faiss-cpu
+pypdf

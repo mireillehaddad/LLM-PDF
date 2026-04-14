@@ -28,7 +28,7 @@ git remote add origin git@github.com:mireillehaddad/LLM-PDF.git
 ```
 # 2. Questions foe PDF's
 
-Basic factual questions (should be EASY for your model)
+Basic factual questions (should be EASY for mymodel)
 - What is the title of the project?
 - Which organization is leading the project?
 - What is the total funding requested?
@@ -37,3 +37,42 @@ Basic factual questions (should be EASY for your model)
 
 
 
+to deploy into cloud:
+
+& "C:\Users\mirei\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\gcloud" auth login
+
+& "C:\Users\mirei\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\gcloud" config set project llm-pdf-493302
+
+& "C:\Users\mirei\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\gcloud" run deploy pdf-rag-app `
+  --source . `
+  --region northamerica-northeast1 `
+  --allow-unauthenticated `
+  --set-secrets OPENAI_API_KEY=OPENAI_API_KEY:latest
+
+  ![
+    
+  ](image.png)
+
+
+
+  mireille_elhaddadwazen@cloudshell:~/llm-pdf-project (llm-pdf-493302)$ gcloud run deploy pdf-rag-app \
+  --source . \
+  --region northamerica-northeast1 \
+  --allow-unauthenticated \
+  --set-secrets OPENAI_API_KEY=OPENAI_API_KEY:latest
+Building using Buildpacks and deploying container to Cloud Run service [pdf-rag-app] in project [llm-pdf-493302] region [northamerica-northeast1]
+Building and deploying...                                                                                                                                                                                  
+  Validating configuration...done                                                                                                                                                                          
+  Uploading sources...done                                                                                                                                                                                 
+  Building Container... Logs are available at [https://console.cloud.google.com/cloud-build/builds;region=northamerica-northeast1/456c4f81-8ecb-4194-89bf-931e7cf83024?project=449206193702]....done       
+  Setting IAM Policy...done                                                                                                                                                                                
+  Creating Revision...done                                                                                                                                                                                 
+  Routing traffic...done                                                                                                                                                                                   
+Done.                                                                                                                                                                                                      
+Service [pdf-rag-app] revision [pdf-rag-app-00003-29d] has been deployed and is serving 100 percent of traffic.
+Service URL: https://pdf-rag-app-449206193702.northamerica-northeast1.run.app
+
+
+GCP deployed:
+
+![alt text](image-1.png)
