@@ -69,13 +69,13 @@ Building and deploying...
   Setting IAM Policy...done                                                                                                                                                                                
   Creating Revision...done                                                                                                                                                                                 
   Routing traffic...done                                                                                                                                                                                   
-Done.                                                                                                                                                ```
+Done.                                                                                                               ```
 
-```
+
 Service [pdf-rag-app] revision [pdf-rag-app-00003-29d] has been deployed and is serving 100 percent of traffic.
 Service URL: https://pdf-rag-app-449206193702.northamerica-northeast1.run.app
 
-```
+
 
 
 GCP deployed:
