@@ -76,7 +76,9 @@ Service [pdf-rag-app] revision [pdf-rag-app-00003-29d] has been deployed and is 
 Service URL: https://pdf-rag-app-449206193702.northamerica-northeast1.run.app
 
 ```
+
+
 GCP deployed:
 
-![
-](image-1.png)
+![](image-1.png)
+
